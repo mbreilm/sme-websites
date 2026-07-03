@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fürmann Waltraud Friseursalon | Friseur Traunstein</title>
+  <meta name="description" content="Fürmann Waltraud Friseursalon in Traunstein. Damen, Herren & Kinder. 5 Sterne. Termin: 0861 41 22. Elegante Frisuren, Coloration & mehr.">
+  <meta name="keywords" content="Friseur Traunstein, Friseursalon Traunstein, Damenfriseur, Haarschnitt, Haarfarbe, Friseur Scheibenstraße, Kinderfriseur Traunstein">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Fürmann Waltraud Friseursalon">
+  <meta property="og:description" content="Elegante Frisuren in Traunstein. Damen, Herren & Kinder. Jetzt Termin vereinbaren!">
+  <meta property="og:type" content="business.business">
+  <meta property="og:locale" content="de_DE">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            blush: {
+              50: '#FDF8F5',
+              100: '#F4E1D2',
+              200: '#E8C5B5',
+              300: '#D4A5A5',
+              400: '#C08A8A',
+              500: '#A06E6E',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .fade-up { animation: fadeUp 0.7s ease-out forwards; opacity: 0; transform: translateY(24px); }
+    @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "Fürmann Waltraud Friseursalon",
+    "image": "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=1200&q=80",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Scheibenstr. 36",
+      "addressLocality": "Traunstein",
+      "addressRegion": "BY",
+      "postalCode": "83278",
+      "addressCountry": "DE"
+    },
+    "telephone": "+498614122",
+    "priceRange": "€€",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "3"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "17:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "12:00" }
+    ]
+  }
+  </script>
+</head>
+<body class="font-sans text-gray-700 bg-white antialiased">
+  <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-blush-100">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#" class="text-xl font-serif font-bold text-gray-900 tracking-wide">
+        Waltraud <span class="text-blush-300">Fürmann</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="#willkommen" class="hover:text-blush-300 transition">Willkommen</a>
+        <a href="#leistungen" class="hover:text-blush-300 transition">Leistungen</a>
+        <a href="#galerie" class="hover:text-blush-300 transition">Galerie</a>
+        <a href="#oeffnungszeiten" class="hover:text-blush-300 transition">Öffnungszeiten</a>
+        <a href="#kontakt" class="hover:text-blush-300 transition">Kontakt</a>
+      </div>
+      <a href="tel:08614122" class="hidden md:inline-flex items-center gap-2 bg-blush-300 hover:bg-blush-400 text-white px-5 py-2.5 rounded-full font-medium transition shadow-sm">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.21-.996-.576-1.337l-3.54-3.158a1.125 1.125 0 0 0-1.56.072l-1.695 1.695a15.354 15.354 0 0 1-6.313-6.313l1.695-1.695a1.125 1.125 0 0 0 .072-1.56L6.492 3.576a1.125 1.125 0 0 0-1.337-.576H3.75A2.25 2.25 0 0 0 1.5 5.25v2.25Z"/></svg>
+        0861 41 22
+      </a>
+      <button id="mobile-btn" class="md:hidden p-2 text-gray-600" aria-label="Menü">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-blush-100 bg-white px-4 py-4 space-y-3">
+      <a href="#willkommen" class="block text-sm font-medium hover:text-blush-300">Willkommen</a>
+      <a href="#leistungen" class="block text-sm font-medium hover:text-blush-300">Leistungen</a>
+      <a href="#galerie" class="block text-sm font-medium hover:text-blush-300">Galerie</a>
+      <a href="#oeffnungszeiten" class="block text-sm font-medium hover:text-blush-300">Öffnungszeiten</a>
+      <a href="#kontakt" class="block text-sm font-medium hover:text-blush-300">Kontakt</a>
+      <a href="tel:08614122" class="inline-flex items-center gap-2 text-blush-300 font-medium mt-2">0861 41 22</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="relative min-h-[90vh] flex items-center overflow-hidden">
+      <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=1600&q=80" alt="Friseursalon Innen" class="absolute inset-0 w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-r from-gray-900/80 via-gray-900/40 to-transparent"></div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
+        <div class="max-w-2xl fade-up">
+          <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm mb-6">
+            <span class="text-yellow-400">★★★★★</span> 5,0 Sterne · 3 Bewertungen
+          </div>
+          <h1 class="text-4xl md:text-6xl font-serif font-bold text-white leading-tight mb-6">Eleganz für Ihr Haar</h1>
+          <p class="text-lg md:text-xl text-white/90 mb-8 leading-relaxed max-w-lg font-light">Ihr Friseursalon in Traunstein für Damen, Herren und Kinder. Mit Stil, Kreativität und persönlicher Aufmerksamkeit.</p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="tel:08614122" class="inline-flex items-center justify-center gap-2 bg-blush-300 hover:bg-blush-400 text-white px-8 py-4 rounded-full font-semibold text-lg transition shadow-lg">Jetzt Termin vereinbaren</a>
+            <a href="#leistungen" class="inline-flex items-center justify-center gap-2 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white px-8 py-4 rounded-full font-semibold text-lg transition">Unsere Leistungen →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="willkommen" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <span class="text-blush-300 font-semibold text-sm uppercase tracking-wider">Willkommen</span>
+            <h2 class="text-3xl md:text-4xl font-serif font-bold text-gray-900 mt-2 mb-6">Ihr Salon in Traunstein</h2>
+            <p class="text-gray-600 leading-relaxed mb-4">Im Fürmann Waltraud Friseursalon steht Ihr Wohlbefinden an erster Stelle. Seit Jahren verwöhnen wir unsere Kunden in Traunstein mit stilvollen Schnitten, kreativen Colorationen und einer entspannten Atmosphäre.</p>
+            <p class="text-gray-600 leading-relaxed mb-6">Egal ob klassisch oder modern – wir finden gemeinsam den Look, der zu Ihrem Typ passt. Kompetente Beratung, hochwertige Produkte und liebevolle Handarbeit zeichnen uns aus.</p>
+            <div class="flex items-center gap-6">
+              <div class="text-center">
+                <div class="text-2xl font-bold text-blush-300">5,0</div>
+                <div class="text-sm text-gray-500">Sterne</div>
+              </div>
+              <div class="h-10 w-px bg-gray-200"></div>
+              <div class="text-center">
+                <div class="text-2xl font-bold text-blush-300">Erfahrung</div>
+                <div class="text-sm text-gray-500">& Leidenschaft</div>
+              </div>
+              <div class="h-10 w-px bg-gray-200"></div>
+              <div class="text-center">
+                <div class="text-2xl font-bold text-blush-300">Familiär</div>
+                <div class="text-sm text-gray-500">Atmosphäre</div>
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=800&q=80" alt="Friseur bei der Arbeit" class="rounded-2xl shadow-xl w-full h-96 object-cover">
+            <div class="absolute -bottom-6 -right-6 bg-white rounded-xl shadow-lg p-6 max-w-xs">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="text-yellow-400 text-lg">★★★★★</span>
+                <span class="font-bold text-gray-800">5,0</span>
+              </div>
+              <p class="text-sm text-gray-600 italic">„Wunderbarer Salon, super Beratung und tolles Ergebnis!“</p>
+              <p class="text-xs text-gray-400 mt-2">— Google-Bewertung</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="leistungen" class="py-20 bg-blush-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <span class="text-blush-300 font-semibold text-sm uppercase tracking-wider">Unser Angebot</span>
+          <h2 class="text-3xl md:text-4xl font-serif font-bold text-gray-900 mt-2">Leistungen</h2>
+          <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Alles rund um schönes Haar – von der Beratung bis zum perfekten Finish.</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition border border-blush-100">
+            <div class="w-12 h-12 bg-blush-50 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-blush-300" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 6a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm14-11L8.5 15.5M14 5l6 6"/></svg>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Damenfrisur</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Schnitt, Wash & Style, Föhnen. Klassisch elegant oder modern und kühn – ganz nach Ihrem Wunsch.</p>
+          </div>
+          <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition border border-blush-100">
+            <div class="w-12 h-12 bg-blush-50 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-blush-300" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"/></svg>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Coloration & Strähnen</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Vollton, Strähnen, Balayage oder Ombré. Natürliche Töne und kreative Farben mit Profi-Produkten.</p>
+          </div>
+          <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition border border-blush-100">
+            <div class="w-12 h-12 bg-blush-50 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-blush-300" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/></svg>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Herrenfrisur</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Präzise Schnitte, klassische Herrenfrisur, Bartpflege. Stilvoll und gepflegt – für den modernen Mann.</p>
+          </div>
+          <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition border border-blush-100">
+            <div class="w-12 h-12 bg-blush-50 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-blush-300" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zM8 9h.01M16 9h.01M9.5 15a3.5 3.5 0 0 0 5 0"/></svg>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Kinderfrisur</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Mit Geduld und Einfühlungsvermögen für die Kleinen. Schnell, freundlich und ohne Stress.</p>
+          </div>
+          <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition border border-blush-100">
+            <div class="w-12 h-12 bg-blush-50 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-blush-300" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"/></svg>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Pflege & Kur</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Intensivkur, Kopfmassage, Glanzbehandlung. Für gesundes, geschmeidiges Haar mit natürlichem Glanz.</p>
+          </div>
+          <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition border border-blush-100">
+            <div class="w-12 h-12 bg-blush-50 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-blush-300" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Festliche Frisuren</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Hochstecken, Brautstyling, festliche Looks. Für Ihre besonderen Momente mit Probeschnitt.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="galerie" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <span class="text-blush-300 font-semibold text-sm uppercase tracking-wider">Inspiration</span>
+          <h2 class="text-3xl md:text-4xl font-serif font-bold text-gray-900 mt-2">Galerie</h2>
+          <p class="text-gray-600 mt-4">Lassen Sie sich von unseren Kreationen inspirieren.</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="group relative overflow-hidden rounded-2xl aspect-[3/4]">
+            <img src="https://images.unsplash.com/photo-1522337360828-94b7d4e7df17?w=600&q=80" alt="Balayage" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-4"><span class="text-white font-medium text-sm">Balayage</span></div>
+          </div>
+          <div class="group relative overflow-hidden rounded-2xl aspect-[3/4]">
+            <img src="https://images.unsplash.com/photo-1492106087820-71b1a00e3d84?w=600&q=80" alt="Kurze Frisur" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-4"><span class="text-white font-medium text-sm">Kurz & Modern</span></div>
+          </div>
+          <div class="group relative overflow-hidden rounded-2xl aspect-[3/4]">
+            <img src="https://images.unsplash.com/photo-1503951910674-009a6318a944?w=600&q=80" alt="Herrenschnitt" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-4"><span class="text-white font-medium text-sm">Herren</span></div>
+          </div>
+          <div class="group relative overflow-hidden rounded-2xl aspect-[3/4]">
+            <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=600&q=80" alt="Coloration" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-4"><span class="text-white font-medium text-sm">Coloration</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-blush-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <span class="text-blush-300 font-semibold text-sm uppercase tracking-wider">Darum wir</span>
+          <h2 class="text-3xl md:text-4xl font-serif font-bold text-gray-900 mt-2">Warum zu uns?</h2>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-blush-300 rounded-full flex items-center justify-center text-white flex-shrink-0"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/></svg></div>
+            <div><h3 class="font-bold text-gray-900 mb-1">Hervorragende Bewertungen</h3><p class="text-gray-600 text-sm">5,0 von 5 Sternen bei Google. Unsere Kunden schätzen Qualität und Freundlichkeit.</p></div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-blush-300 rounded-full flex items-center justify-center text-white flex-shrink-0"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z"/></svg></div>
+            <div><h3 class="font-bold text-gray-900 mb-1">Persönliche Beratung</h3><p class="text-gray-600 text-sm">Wir nehmen uns Zeit, hören zu und beraten individuell – für den perfekten Look.</p></div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-blush-300 rounded-full flex items-center justify-center text-white flex-shrink-0"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg></div>
+            <div><h3 class="font-bold text-gray-900 mb-1">Pünktlich & Zuverlässig</h3><p class="text-gray-600 text-sm">Ihr Termin wird eingehalten. Kein Warten, keine Hektik – nur gute Laune.</p></div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-blush-300 rounded-full flex items-center justify-center text-white flex-shrink-0"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.62a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"/></svg></div>
+            <div><h3 class="font-bold text-gray-900 mb-1">Premium-Produkte</h3><p class="text-gray-600 text-sm">Wir verwenden hochwertige Marken für langlebige Farben und gesundes Haar.</p></div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-blush-300 rounded-full flex items-center justify-center text-white flex-shrink-0"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z"/></svg></div>
+            <div><h3 class="font-bold text-gray-900 mb-1">Gemütliche Atmosphäre</h3><p class="text-gray-600 text-sm">Entspannter Salon mit familiärer Stimmung. Hier können Sie abschalten.</p></div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-blush-300 rounded-full flex items-center justify-center text-white flex-shrink-0"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.62a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"/></svg></div>
+            <div><h3 class="font-bold text-gray-900 mb-1">Erfahrung & Know-how</h3><p class="text-gray-600 text-sm">Jahrelange Erfahrung und kontinuierliche Weiterbildung für topaktuelle Trends.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="oeffnungszeiten" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="order-2 md:order-1 relative">
+            <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=800&q=80" alt="Salon Ambiente" class="rounded-2xl shadow-xl w-full h-96 object-cover">
+            <div class="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-lg p-6 max-w-xs">
+              <div class="flex items-center gap-3 mb-2">
+                <div class="w-10 h-10 bg-blush-300 rounded-full flex items-center justify-center text-white"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.21-.996-.576-1.337l-3.54-3.158a1.125 1.125 0 0 0-1.56.072l-1.695 1.695a15.354 15.354 0 0 1-6.313-6.313l1.695-1.695a1.125 1.125 0 0 0 .072-1.56L6.492 3.576a1.125 1.125 0 0 0-1.337-.576H3.75A2.25 2.25 0 0 0 1.5 5.25v2.25Z"/></svg></div>
+                <div><div class="text-xs text-gray-500">Telefon</div><div class="font-bold text-gray-900">0861 41 22</div></div>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-blush-300 rounded-full flex items-center justify-center text-white"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg></div>
+                <div><div class="text-xs text-gray-500">Adresse</div><div class="font-bold text-gray-900">Scheibenstr. 36, 83278 Traunstein</div></div>
+              </div>
+            </div>
+          </div>
+          <div class="order-1 md:order-2">
+            <span class="text-blush-300 font-semibold text-sm uppercase tracking-wider">Wann Sie uns finden</span>
+            <h2 class="text-3xl md:text-4xl font-serif font-bold text-gray-900 mt-2 mb-8">Öffnungszeiten</h2>
+            <div class="space-y-3 max-w-md">
+              <div class="flex justify-between items-center py-3 border-b border-gray-100"><span class="font-medium text-gray-800">Montag</span><span class="text-gray-600">08:00 – 17:00</span></div>
+              <div class="flex justify-between items-center py-3 border-b border-gray-100"><span class="font-medium text-gray-800">Dienstag</span><span class="text-gray-600">08:00 – 17:00</span></div>
+              <div class="flex justify-between items-center py-3 border-b border-gray-100"><span class="font-medium text-gray-800">Mittwoch</span><span class="text-gray-600">08:00 – 17:00</span></div>
+              <div class="flex justify-between items-center py-3 border-b border-gray-100"><span class="font-medium text-gray-800">Donnerstag</span><span class="text-gray-600">08:00 – 17:00</span></div>
+              <div class="flex justify-between items-center py-3 border-b border-gray-100"><span class="font-medium text-gray-800">Freitag</span><span class="text-gray-600">08:00 – 17:00</span></div>
+              <div class="flex justify-between items-center py-3 border-b border-gray-100"><span class="font-medium text-gray-800">Samstag</span><span class="text-gray-600">08:00 – 12:00</span></div>
+              <div class="flex justify-between items-center py-3"><span class="font-medium text-gray-800">Sonntag</span><span class="text-gray-500">Geschlossen</span></div>
+            </div>
+            <div class="mt-8 p-6 bg-blush-50 rounded-xl border border-blush-100">
+              <p class="text-gray-700 text-sm"><strong class="text-gray-900">Hinweis:</strong> Termine außerhalb der Öffnungszeiten sind nach Absprache möglich. Melden Sie sich einfach!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt" class="py-20 bg-gray-900 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-12">
+          <div>
+            <span class="text-blush-300 font-semibold text-sm uppercase tracking-wider">Kontakt</span>
+            <h2 class="text-3xl md:text-4xl font-serif font-bold mt-2 mb-6">Besuchen Sie uns</h2>
+            <p class="text-gray-400 mb-8 leading-relaxed">Wir freuen uns darauf, Sie in unserem Salon begrüßen zu dürfen. Rufen Sie an oder kommen Sie direkt vorbei – wir beraten Sie gerne!</p>
+            <div class="space-y-5">
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-blush-300/20 rounded-full flex items-center justify-center text-blush-300 flex-shrink-0"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg></div>
+                <div><div class="font-bold text-white">Adresse</div><div class="text-gray-400">Scheibenstr. 36<br>83278 Traunstein</div></div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-blush-300/20 rounded-full flex items-center justify-center text-blush-300 flex-shrink-0"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.21-.996-.576-1.337l-3.54-3.158a1.125 1.125 0 0 0-1.56.072l-1.695 1.695a15.354 15.354 0 0 1-6.313-6.313l1.695-1.695a1.125 1.125 0 0 0 .072-1.56L6.492 3.576a1.125 1.125 0 0 0-1.337-.576H3.75A2.25 2.25 0 0 0 1.5 5.25v2.25Z"/></svg></div>
+                <div><div class="font-bold text-white">Telefon</div><a href="tel:08614122" class="text-gray-400 hover:text-white transition">0861 41 22</a></div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-blush-300/20 rounded-full flex items-center justify-center text-blush-300 flex-shrink-0"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg></div>
+                <div><div class="font-bold text-white">Öffnungszeiten</div><div class="text-gray-400">Mo–Fr: 08:00–17:00<br>Sa: 08:00–12:00</div></div>
+              </div>
+            </div>
+            <a href="tel:08614122" class="mt-8 inline-flex items-center gap-2 bg-blush-300 hover:bg-blush-400 text-white px-8 py-4 rounded-full font-semibold text-lg transition">Jetzt anrufen</a>
+          </div>
+          <div class="rounded-2xl overflow-hidden h-96 md:h-auto bg-gray-800">
+            <iframe src="https://www.google.com/maps?q=Scheibenstr.36,83278+Traunstein&output=embed" class="w-full h-full border-0" loading="lazy" allowfullscreen title="Karte Fürmann Waltraud"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-950 text-gray-500 py-12 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="text-xl font-serif font-bold text-white tracking-wide">Waltraud <span class="text-blush-300">Fürmann</span></div>
+        <div class="flex gap-6 text-sm">
+          <a href="#" class="hover:text-white transition">Impressum</a>
+          <a href="#" class="hover:text-white transition">Datenschutz</a>
+          <a href="#" class="hover:text-white transition">Öffnungszeiten</a>
+        </div>
+      </div>
+      <div class="mt-8 pt-8 border-t border-gray-800 text-sm text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-4">
+        <p>© 2024 Fürmann Waltraud Friseursalon. Alle Rechte vorbehalten.</p>
+        <p>Scheibenstr. 36 · 83278 Traunstein · 0861 41 22</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobile-btn').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

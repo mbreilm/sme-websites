@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Baumontagen UG | Baumontagen & Baukoordination in München</title>
+    <meta name="description" content="AR Baumontagen UG (haftungsbeschränkt) — Baumontagen, Baukoordination und Gewerkeübergreifende Bauarbeiten in München. Jetzt anfragen!">
+    <meta name="keywords" content="Baumontagen München, Baukoordination, Gewerkekoordination, Montagebau, München">
+    <meta name="robots" content="index, follow">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: { 50: '#f0f9ff', 100: '#e0f2fe', 500: '#0ea5e9', 600: '#0284c7', 700: '#0369a1', 900: '#0c4a6e' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .logo-ar { width: 48px; height: 48px; }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <svg class="logo-ar mr-3" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="200" height="200" rx="28" fill="#0284c7"/>
+                        <path d="M30 170 L100 40 L170 170" fill="none" stroke="white" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+                        <path d="M55 170 L55 120 Q55 100 75 100 L125 100 Q145 100 145 120 L145 170" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+                        <circle cx="100" cy="70" r="18" fill="white" opacity="0.2"/>
+                    </svg>
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-900 leading-tight">AR Baumontagen</h1>
+                        <p class="text-xs text-gray-500">UG (haftungsbeschränkt)</p>
+                    </div>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#leistungen" class="text-gray-600 hover:text-brand-600 font-medium transition">Leistungen</a>
+                    <a href="#ueber-uns" class="text-gray-600 hover:text-brand-600 font-medium transition">Über uns</a>
+                    <a href="#kontakt" class="text-gray-600 hover:text-brand-600 font-medium transition">Kontakt</a>
+                </nav>
+                <a href="tel:+498943519780" class="hidden md:inline-flex items-center bg-brand-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-brand-700 transition shadow-lg">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                    089 43 51 97 80
+                </a>
+                <button id="mobile-menu-btn" class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-50 border-t">
+            <a href="#leistungen" class="block px-4 py-3 text-gray-700 hover:bg-gray-100">Leistungen</a>
+            <a href="#ueber-uns" class="block px-4 py-3 text-gray-700 hover:bg-gray-100">Über uns</a>
+            <a href="#kontakt" class="block px-4 py-3 text-gray-700 hover:bg-gray-100">Kontakt</a>
+        </div>
+    </header>
+
+    <div id="preview-banner" class="bg-yellow-400 text-gray-900 text-center py-2 px-4 text-sm font-medium">
+        <span class="font-bold">Vorschau:</span> Werte mit * sind Platzhalter. Nach einem kurzen Erstgespräch werden diese mit Ihren realen Zahlen befüllt.
+        <button onclick="document.getElementById('preview-banner').style.display='none'" class="ml-2 font-bold underline">×</button>
+    </div>
+
+    <section class="relative bg-gray-900 text-white overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&h=1080&fit=crop&q=80" alt="Baustelle" class="absolute inset-0 w-full h-full object-cover opacity-40">
+        <div class="absolute inset-0 bg-gradient-to-r from-gray-900/90 to-gray-900/50"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+            <div class="max-w-2xl">
+                <p class="text-brand-400 font-semibold mb-4 tracking-wide uppercase text-sm">Baumontagen & Baukoordination</p>
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">Ihr Bauprojekt.<br>Unsere Expertise.</h2>
+                <p class="text-xl text-gray-300 mb-8 leading-relaxed">AR Baumontagen UG koordiniert Baumontagen und Gewerke in München und Oberbayern — professionell, termingerecht und zuverlässig.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#kontakt" class="inline-flex items-center justify-center bg-brand-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-brand-700 transition shadow-lg">
+                        Kostenloses Angebot anfordern
+                    </a>
+                    <a href="tel:+498943519780" class="inline-flex items-center justify-center bg-white/10 backdrop-blur border border-white/30 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/20 transition">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        089 43 51 97 80
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white py-8 border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div>
+                    <p class="text-3xl font-bold text-brand-600">10+*</p>
+                    <p class="text-gray-600 text-sm">Jahre Erfahrung</p>
+                </div>
+                <div>
+                    <p class="text-3xl font-bold text-brand-600">200+*</p>
+                    <p class="text-gray-600 text-sm">Abgeschlossene Projekte</p>
+                </div>
+                <div>
+                    <p class="text-3xl font-bold text-brand-600">50km*</p>
+                    <p class="text-gray-600 text-sm">Einzugsgebiet</p>
+                </div>
+                <div>
+                    <p class="text-3xl font-bold text-brand-600">100%*</p>
+                    <p class="text-gray-600 text-sm">Termintreue</p>
+                </div>
+            </div>
+            <p class="text-center text-gray-400 text-xs mt-4">* Platzhalter-Werte. Werden nach einem kurzen Erstgespräch mit Ihren realen Zahlen befüllt.</p>
+        </div>
+    </section>
+
+    <section id="leistungen" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <p class="text-brand-600 font-semibold mb-2 uppercase tracking-wide text-sm">Unser Service</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Was wir für Sie tun</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">Von der einzelnen Baumontage bis zur komplexen Gewerkekoordination.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-sm p-8 hover:shadow-lg transition border border-gray-100">
+                    <div class="w-16 h-16 bg-brand-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Baumontagen</h3>
+                    <p class="text-gray-600 leading-relaxed">Fachgerechte Montage von Bauteilen, Fassadenelementen, Trockenbau und Innenausbau.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm p-8 hover:shadow-lg transition border border-gray-100">
+                    <div class="w-16 h-16 bg-brand-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Baukoordination</h3>
+                    <p class="text-gray-600 leading-relaxed">Übergreifende Koordination aller Gewerke. Ein Ansprechpartner, klare Kommunikation.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm p-8 hover:shadow-lg transition border border-gray-100">
+                    <div class="w-16 h-16 bg-brand-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Terminmanagement</h3>
+                    <p class="text-gray-600 leading-relaxed">Präzise Zeitplanung für alle Beteiligten. Keine Wartezeiten, keine Stillstände.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm p-8 hover:shadow-lg transition border border-gray-100">
+                    <div class="w-16 h-16 bg-brand-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Qualitätssicherung</h3>
+                    <p class="text-gray-600 leading-relaxed">Kontinuierliche Baustellenkontrolle und Dokumentation. Nur wenn alles passt, ist das Projekt abgeschlossen.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm p-8 hover:shadow-lg transition border border-gray-100">
+                    <div class="w-16 h-16 bg-brand-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Schnelleinsatz</h3>
+                    <p class="text-gray-600 leading-relaxed">Kurzfristige Montageeinsätze und Notfallkoordination. Flexibel und zuverlässig.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm p-8 hover:shadow-lg transition border border-gray-100">
+                    <div class="w-16 h-16 bg-brand-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Subunternehmer-Management</h3>
+                    <p class="text-gray-600 leading-relaxed">Qualifizierte Handwerker koordinieren und beauftragen. Ein professionelles Netzwerk.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ueber-uns" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <p class="text-brand-600 font-semibold mb-2 uppercase tracking-wide text-sm">Über uns</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">AR Baumontagen UG — Ihr Partner für Bauprojekte</h2>
+                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">AR Baumontagen UG (haftungsbeschränkt) ist Ihr Ansprechpartner für Baumontagen und Baukoordination in München und Oberbayern. Wir bringen Know-how und ein professionelles Netzwerk an Fachhandwerkern mit, um Ihr Projekt erfolgreich umzusetzen.</p>
+                    <p class="text-gray-600 text-lg mb-8 leading-relaxed">Egal ob Gewerbehof, Bürogebäude oder Wohnanlage — wir sorgen für Präzision, Termintreue und transparente Kommunikation.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-brand-600 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <p class="text-gray-700"><strong>Termintreue:</strong> Ihr Zeitplan ist unsere Verpflichtung.</p>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-brand-600 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <p class="text-gray-700"><strong>Qualität:</strong> Kontinuierliche Kontrolle auf der Baustelle.</p>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-brand-600 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <p class="text-gray-700"><strong>Transparenz:</strong> Keine versteckten Kosten, klare Kommunikation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&h=600&fit=crop&q=80" alt="Bauarbeiter auf der Baustelle" class="rounded-xl shadow-xl w-full">
+                    <div class="absolute -bottom-6 -right-6 bg-brand-600 text-white p-6 rounded-xl shadow-lg">
+                        <p class="text-brand-100 text-sm">AR Baumontagen UG</p>
+                        <p class="text-lg font-semibold">München</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontakt" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div>
+                    <p class="text-brand-400 font-semibold mb-2 uppercase tracking-wide text-sm">Kontakt</p>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Lassen Sie uns über Ihr Projekt sprechen</h2>
+                    <p class="text-gray-300 text-lg mb-8">Rufen Sie uns an oder senden Sie eine Nachricht. Wir melden uns innerhalb von 24 Stunden bei Ihnen.</p>
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-brand-600/20 rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            </div>
+                            <div>
+                                <p class="text-gray-400 text-sm">Telefon</p>
+                                <a href="tel:+498943519780" class="text-xl font-semibold hover:text-brand-400 transition">089 43 51 97 80</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-brand-600/20 rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            </div>
+                            <div>
+                                <p class="text-gray-400 text-sm">Adresse</p>
+                                <p class="text-xl font-semibold">Schwanthalerstr. 34 RGB<br>80336 München</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-brand-600/20 rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            </div>
+                            <div>
+                                <p class="text-gray-400 text-sm">Erreichbarkeit</p>
+                                <p class="text-xl font-semibold">Telefonisch während der Geschäftszeiten</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-8 text-gray-900">
+                    <h3 class="text-2xl font-bold mb-6">Kostenloses Angebot anfordern</h3>
+                    <form class="space-y-4" onsubmit="event.preventDefault(); alert('Vielen Dank für Ihre Anfrage! Wir melden uns innerhalb von 24 Stunden bei Ihnen.');">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                                <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition" placeholder="Ihr Name">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Telefon</label>
+                                <input type="tel" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition" placeholder="Ihre Telefonnummer">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">E-Mail</label>
+                            <input type="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition" placeholder="Ihre E-Mail-Adresse">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Projekttyp</label>
+                            <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition">
+                                <option>Baumontage</option>
+                                <option>Baukoordination</option>
+                                <option>Gewerkekoordination</option>
+                                <option>Innenausbau</option>
+                                <option>Sonstiges</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Nachricht</label>
+                            <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition" placeholder="Beschreiben Sie kurz Ihr Projekt..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-brand-600 text-white py-4 rounded-lg font-semibold text-lg hover:bg-brand-700 transition shadow-lg">
+                            Angebot anfordern
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-950 text-gray-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 mr-2" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="200" height="200" rx="28" fill="#0284c7"/>
+                            <path d="M30 170 L100 40 L170 170" fill="none" stroke="white" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+                            <path d="M55 170 L55 120 Q55 100 75 100 L125 100 Q145 100 145 120 L145 170" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+                            <circle cx="100" cy="70" r="18" fill="white" opacity="0.2"/>
+                        </svg>
+                        <span class="text-white font-bold">AR Baumontagen UG</span>
+                    </div>
+                    <p class="text-sm">Baumontagen und Baukoordination in München und Oberbayern.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Kontakt</h4>
+                    <p class="text-sm">Schwanthalerstr. 34 RGB</p>
+                    <p class="text-sm">80336 München</p>
+                    <p class="text-sm mt-2">Tel: <a href="tel:+498943519780" class="hover:text-white">089 43 51 97 80</a></p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Rechtliches</h4>
+                    <a href="#impressum" class="text-sm hover:text-white block mb-1">Impressum</a>
+                    <a href="#datenschutz" class="text-sm hover:text-white block mb-1">Datenschutz</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-sm text-center">
+                <p>&copy; AR Baumontagen UG (haftungsbeschränkt). Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
